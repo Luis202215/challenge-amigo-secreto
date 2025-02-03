@@ -15,6 +15,13 @@ function agregarAmigo() {
     } else {
         amigos.push(amigoIngresado);
     }
+    limpiarCaja("amigo");
     console.log(amigoIngresado);
     console.log(amigos);
+}
+
+//Creando Funcion e implementandola para limpiar el campo de entrada
+
+function limpiarCaja (x){
+    document.getElementById(x).value = "";
 }
