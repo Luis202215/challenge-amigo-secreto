@@ -5,3 +5,16 @@
 // que almacenara nombre de amigos ingresados
 
 let amigos =[];
+
+//Implementando Funcion para agregar amigos
+
+function agregarAmigo() {
+    let amigoIngresado = document.getElementById("amigo").value;
+    if (amigoIngresado === "") {
+        alert("Por favor, inserte un nombre válido.")
+    } else {
+        amigos.push(amigoIngresado);
+    }
+    console.log(amigoIngresado);
+    console.log(amigos);
+}
