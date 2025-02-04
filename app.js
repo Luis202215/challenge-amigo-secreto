@@ -35,3 +35,14 @@ function ingresarEnLista () {
         lista.innerHTML += `<li> ${amigos[i]}</li>`;
     }
 }
+
+//Creando e implementando funcion para seleccionar un amigo de la lista.
+let amigoSecreto = document.getElementById("resultado");
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("Por favor, ingrese amigos a la lista.");
+    } else{
+        let numeroGenerado = Math.floor((Math.random() * amigos.length));
+        amigoSecreto.innerHTML = `Tu amigo secreto es:<br>${amigos[numeroGenerado]}</br>`;
+    }
+}
