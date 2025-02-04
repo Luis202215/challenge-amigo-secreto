@@ -15,6 +15,7 @@ function agregarAmigo() {
     } else {
         amigos.push(amigoIngresado);
     }
+    ingresarEnLista();
     limpiarCaja("amigo");
     console.log(amigoIngresado);
     console.log(amigos);
@@ -24,4 +25,13 @@ function agregarAmigo() {
 
 function limpiarCaja (x){
     document.getElementById(x).value = "";
+}
+
+//Creando e implementando función para agregar nombres de amigos en forma de lista.
+let lista = document.getElementById("listaAmigos");
+function ingresarEnLista () {
+    lista.innerHTML ="";
+    for (let i = 0 ; i < amigos.length; i++) {
+        lista.innerHTML += `<li> ${amigos[i]}</li>`;
+    }
 }
