@@ -1,3 +1,3 @@
 Creacion del archivo readme
 
-![logo amigo secreto](https://imgur.com/gallery/amigo-secreto-Jlz6Zin)
+![logo del amigo secreto](https://i.imgur.com/GKMRXC5.jpeg)
