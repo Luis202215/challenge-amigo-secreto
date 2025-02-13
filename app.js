@@ -10,7 +10,7 @@ let amigos =[];
 
 function agregarAmigo() {
     let amigoIngresado = document.getElementById("amigo").value;
-    if (amigoIngresado === "") {
+    if (amigoIngresado.trim() === "") {
         alert("Por favor, inserte un nombre válido.")
     } else {
         amigos.push(amigoIngresado);
