@@ -5,6 +5,8 @@
 // que almacenara nombre de amigos ingresados
 
 let amigos =[];
+let comprobarNumero = /\d/;
+let comprobarCaracterEspecial = /\W/;
 
 //Implementando Funcion para agregar amigos
 
@@ -13,7 +15,15 @@ function agregarAmigo() {
     if (amigoIngresado.trim() === "") {
         alert("Por favor, inserte un nombre válido.")
     } else {
-        amigos.push(amigoIngresado);
+        if (comprobarNumero.test(amigoIngresado)) {
+            alert("Por favor, ingrese solo letras.")
+        } else{
+            if (comprobarCaracterEspecial.test(amigoIngresado)) {
+                alert("Por favor, ingrese solo letras")
+            } else {
+                amigos.push(amigoIngresado);
+            }
+        }
     }
     ingresarEnLista();
     limpiarCaja("amigo");
