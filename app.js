@@ -5,6 +5,8 @@
 // que almacenara nombre de amigos ingresados
 
 let amigos =[];
+
+//declarando las variables que usara para comprobar los datos ingresados.
 let comprobarNumero = /\d/;
 let comprobarCaracterEspecial = /\W/;
 
